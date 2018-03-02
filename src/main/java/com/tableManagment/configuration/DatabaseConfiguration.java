@@ -51,7 +51,7 @@ private Properties hibernateProperties() {
 public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
   LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
   em.setDataSource(dataSource());
-  em.setPackagesToScan(new String[] { "com.theKoftaTown.model" });
+  em.setPackagesToScan(new String[] { "com.tableManagment.model" });
 
   JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
   em.setJpaVendorAdapter(vendorAdapter);

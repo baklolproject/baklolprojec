@@ -37,13 +37,13 @@ public class AppConfiguration extends WebMvcConfigurerAdapter{
 	    return properties;
 	  }
 
-	@Bean
+	/*@Bean
 	public CommonsMultipartResolver multipartResolver(){
 	    CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
 	    commonsMultipartResolver.setDefaultEncoding("utf-8");
 	    commonsMultipartResolver.setMaxUploadSize(50000000);
 	    return commonsMultipartResolver;
-	}
+	}*/
 	
 	//@/*Bean
 	/*public MultipartConfigElement multipartConfigElement(){

@@ -13,11 +13,11 @@ import com.tableManagment.repository.RestroIPMasterRepository;
 public class RestroIPMasterServiceImpl implements RestroIPMasterService {
 @Inject
 private RestroIPMasterRepository restroMasteRepository;
-	@SuppressWarnings("null")
+	
 	
 	public RestroIPMasterDTO getRestroDetails() {
 		
-		RestroIPMasterDTO restroIpMasterDto = null;
+		RestroIPMasterDTO restroIpMasterDto = new RestroIPMasterDTO();
 		List <RestroIPMasterModel> restroIpMasterModel =restroMasteRepository.findAll();
 		restroIpMasterDto.setId(restroIpMasterModel.get(0).getRestoIdentityModel().getId());
 		restroIpMasterDto.setIp_Address(restroIpMasterModel.get(0).getRestoIdentityModel().getIp_Address());

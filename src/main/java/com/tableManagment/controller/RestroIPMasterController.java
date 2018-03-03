@@ -21,7 +21,7 @@ public class RestroIPMasterController extends BaseRestController {
 @Inject
 private RestroIPMasterService restroMasterServive;
 
-@RequestMapping(value="/getRstroDetails/",method=RequestMethod.GET)
+@RequestMapping(value="/getRstroDetails",method=RequestMethod.GET)
 public ResponseEntity<Object>getAllNewOrder() {
 	System.out.println("HI");
 	RestroIPMasterDTO restroIPMasterDTO=restroMasterServive.getRestroDetails();
